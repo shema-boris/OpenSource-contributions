@@ -1,15 +1,15 @@
 # Contribution [#]: [Issue Title]
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** 1
+**Student:** Shema Boris Benimana 
+**Issue:** [\[GitHub issue link\] ](https://github.com/dimensionalOS/dimos/issues/1255) 
+**Status:** Phase I 
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+I chose this issue because it sits at the intersection of robotics navigation and algorithm design two areas I find genuinely compelling. The problem is concrete and well-scoped: the current frontier exploration algorithm causes the robot to inefficiently jump across the map rather than exploring systematically, and the maintainer has already proposed an elegant alternative using boundary targets and A*. That gave me a clear starting point to validate and build on rather than starting from scratch.
 
 ---
 
