@@ -41,9 +41,15 @@ I chose this issue because it sits at the intersection of robotics navigation an
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1.Launch the navigation/exploration stack with the default frontier exploration configuration.
+2.Ensure the robot starts in a partially known environment (e.g., a room with unexplored surrounding space).
+3.Begin autonomous exploration using the current wavefront_frontier_goal_selector.
+4.Observe the selected frontier goals over time.
+5.Note that the robot frequently selects frontiers that are far apart spatially, rather than continuing to explore nearby regions.
+6.As a result, the robot:
+  Moves a short distance to explore a local region,
+  Then plans a long path to a distant unexplored frontier,
+  Repeats this behavior, causing inefficient “jumping” across the map.
 
 ### Reproduction Evidence
 
