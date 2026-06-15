@@ -73,6 +73,17 @@ I chose this issue because it sits at the intersection of robotics navigation an
 
 Using UMPIRE framework (adapted):
 
+Replace or modify the frontier scoring function to incorporate actual path cost (A* cost) instead of relying primarily on information gain.
+Rebalance the objective to prioritize closer frontiers, e.g.:
+Use a formulation such as: score = info_gain / (path_cost + ε) or a weighted difference between gain and cost.
+Introduce a locality constraint:
+Either by limiting candidate frontiers to a radius around the robot, or
+By clustering frontiers and selecting the nearest cluster before choosing the best frontier within it.
+(Optional) Refactor the goal selector into clearer components:
+Frontier detection
+Frontier scoring
+Goal selection
+
 **Understand:** [Restate the problem]
 
 **Match:** [What similar patterns/solutions exist in the codebase?]
